@@ -1,0 +1,178 @@
+/*
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+body {
+
+  min-height: 100vh;
+  background-color: #191816;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin: right;
+
+  color: #D4CCB6;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  color: #AFB6C2;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#page #logo {
+  margin: 40px 40px;
+}
+
+.accessDiv {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #AFB6C2;
+
+  width: 335px;
+  margin: 20px;
+}
+
+.login,
+.password {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  height: 44px;
+  background: #191816;
+  border-radius: 4px;
+  border: 1px solid #868686;
+  color: #868686;
+}
+
+.accessDiv :focus-within {
+  border-color: #FFC632;
+}
+
+.accessDiv #imgEmail {
+  background: url('/images/mail.svg') no-repeat;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+}
+
+.accessDiv:focus-within #imgEmail {
+  background: url('/images/mail-focus.svg') no-repeat;
+}
+
+.accessDiv #imgPassword {
+  background: url('/images/lock.svg') no-repeat;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+}
+
+.accessDiv:focus-within #imgPassword {
+  background: url('/images/lock-focus.svg') no-repeat;
+}
+
+.login .input,
+.password .input {
+  outline: none;
+  border: none;
+
+  background: #191816;
+  color: #868686;
+  width: 240px;
+  margin: 4px;
+}
+
+#imgEye {
+  background: url('/images/eye.svg') no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #868686;
+}
+
+#buttons a{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color:#FFC632;
+  text-decoration: none;
+}
+button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  gap: 10px;
+
+  width: 334px;
+  height: 51px;
+
+  background: #FFC632;
+  border-radius: 4px;
+  margin: auto;
+
+  border: none;
+  cursor: pointer;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+}
+section{
+  text-align: center;
+}
+section p{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color:#FFC632;
+}
+section a{
+  color:#FFC632;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 376px) {
+  #page #logo {
+    margin: 20px 20px;
+  }
+
+  h2,
+  p {
+    margin: 20px 20px;
+  }
+
+  #buttons {
+    margin: 20px 20px;
+  }
+}
