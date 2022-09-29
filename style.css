@@ -43,7 +43,7 @@ p {
   line-height: 24px;
   color: #AFB6C2;
 
-  width: 335px;
+  width: 375px;
   margin: 20px;
 }
 
@@ -112,6 +112,31 @@ p {
   line-height: 19px;
   color: #868686;
 }
+#buttons #label {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap:5px;
+}
+#textLabel{
+  margin: 0;
+}
+
+#checkbox{
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background-color: #191816;
+  border: 1px solid #868686;
+  border-radius: 4px;
+  
+  cursor: pointer;
+}
+#checkbox:checked{
+  background: url('/images/check.svg') no-repeat;
+  background-position: 2px;
+  background-color: #FFC632;
+}
 
 #buttons a{
   font-family: 'Poppins';
@@ -162,11 +187,11 @@ section a{
   font-weight: bold;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 576px)  and (orientation: portrait){
   #page #logo {
     margin: 20px 20px;
+    
   }
-
   h2,
   p {
     margin: 20px 20px;
@@ -174,5 +199,11 @@ section a{
 
   #buttons {
     margin: 20px 20px;
+  }
+}
+@media (max-width: 400px){
+  .accessDiv{
+    
+    width: 335px;
   }
 }

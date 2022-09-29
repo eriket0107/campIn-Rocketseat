@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto:wght@400;500&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
+
 </head>
 
 <body>
@@ -33,15 +34,19 @@
         <label for="password">Senha</label>
         <div class="password">
           <div id="imgPassword"></div>
-          <input class="input" type="password" placeholder="Sua senha">
+          <input class="input" type="password" placeholder="Sua senha" required>
           <div id="imgEye"></div>
         </div>
       </div>
       <div id='buttons'>
         <div>
-          <input id="check" type="checkbox" name="check">
-          <label for="check">Lembre-me</label
-            ></div>
+          <label id='label' for="check">
+            <p id="textLabel">Lembre-me</p> 
+            <input id="checkbox" type="checkbox" name="check">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+          </label>
+          
+        </div>
         <span><a href="#">Esqueci minha senha</a></span>
       </div>
       <button type="submit">Entrar</button>
