@@ -8,7 +8,7 @@ body {
   width: 100vw;
   background-color: #191816;
   font-family: 'Poppins', sans-serif;
-  margin:0;
+  margin: 0;
 }
 
 h2 {
@@ -16,7 +16,7 @@ h2 {
   align-items: center;
   gap: 10px;
 
-  margin: right;
+
 
   color: #D4CCB6;
   font-weight: 600;
@@ -36,9 +36,8 @@ p {
   align-items: center;
   height: 100vh;
 }
-#page #logo {
-  margin: 40px 40px;
-}
+
+
 .accessDiv {
   display: flex;
   flex-direction: column;
@@ -96,7 +95,7 @@ p {
 
   background: #191816;
   color: #868686;
-  width: 240px;
+  width: 260px;
   margin: 4px;
 }
 
@@ -104,7 +103,7 @@ p {
   background: url('/images/eye.svg') no-repeat;
   width: 20px;
   height: 20px;
-  margin-right: 10px;
+
 }
 
 #buttons {
@@ -141,6 +140,7 @@ p {
   background: url('/images/check.svg') no-repeat;
   background-position: 2px;
   background-color: #FFC632;
+  outline: none;
 }
 
 #buttons a{
@@ -190,6 +190,7 @@ footer a{
   font-weight: bold;
 }
 .p{
+  text-align: center;
   font-family: 'Poppins';
   font-weight: 500;
   font-size: 14px;
@@ -203,8 +204,8 @@ footer a{
 @media (min-width: 600px) {
   #logo{
     position: fixed;
-    top: 10px;
-    left: 10px;
+    top: 40px;
+    left: 40px;
   }
   body{
     display: flex;
@@ -216,6 +217,12 @@ footer a{
     background-size:50vw;
     background-repeat: no-repeat;
   }
+ section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 334px;
+  }
  
   .container{
     display: flex;
@@ -226,6 +233,7 @@ footer a{
     height: 512px;
     background: #24221F;
     border-radius: 4px;
+    padding:50px ;
   }
   #bg{ 
     width: 50vw;
@@ -265,19 +273,21 @@ footer a{
 }
 
 @media (max-width: 576px)  and (orientation: portrait){
-  
-  #page #logo {
-    margin: 20px 20px;
-    
+
+  #logo{
+    margin: 20px 15px;
+    width: 115px;
+    height: 28px;
   }
   #page{
     display: flex;
     flex-direction: column;
-    justify-content: none;
-    align-items: none;
+    align-items: center;
   }
-  h2,
-  p {
+  section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     margin: 20px 20px;
   }
 
@@ -289,6 +299,12 @@ footer a{
   }
 }
 @media (max-width: 375px){
+  section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+  }
   .accessDiv, #buttons{
     width: 335px;
     margin: 20px auto;
@@ -298,6 +314,9 @@ footer a{
   }
 }
 @media (max-width: 400px){
+  section{
+    margin: 0;
+  }
   .accessDiv, #buttons{
     width: 350px;
     margin: 20px auto;
